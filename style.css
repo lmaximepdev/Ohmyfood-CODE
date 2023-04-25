@@ -1,0 +1,43 @@
+
+/*--- GENERAL ---*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --first-color: #9356DC;
+    --second-color:#FF79DA;
+    --third-color: #99E2D0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+}
+
+header img {
+    height: 34.2px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /* --- */
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        height: 63px;
+    }
+
+}
