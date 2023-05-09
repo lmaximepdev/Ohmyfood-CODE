@@ -149,15 +149,9 @@ header img {
     align-items: center;
 }
 
-.guide span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .guide i {
-    margin-right: 25px;
-    margin-left: 35px;
+    margin-right: 8%;
+    margin-left: 12%;
     color: #7E7E7E;
 }
 
