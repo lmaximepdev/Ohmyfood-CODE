@@ -53,12 +53,15 @@ header a {
 
 /* IMAGE ACCUEIL */
 
-.image-accueil {
+
+.page2-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.image-accueil img {
-    width: 100%;
+.page2-img {
+    height: 275px;
 }
 
 /*** --- MENU --- ***/
@@ -68,20 +71,30 @@ header a {
     display: flex;
     flex-direction: column;
     background-color: #F6F6F6;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: -50px;
+    position: relative;
 }
 
 .menu .title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    
 }
  
-.menu h1 {
+.title h1 {
     font-family: 'Shrikhand';
     font-weight: 400;
     font-size: 28px;
+    margin-left: 17px;
+}
+
+.title i {
+    margin-right: 20px;
+    font-size: 21px;
 }
 
 /*** STEPS css ***/
@@ -91,12 +104,12 @@ header a {
     flex-direction: column;
     padding-left: 13px;
     padding-right: 13px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .STEPS h2 {
     position: relative;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
 }
 
@@ -115,6 +128,8 @@ header a {
 .menu-cards {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .menu-card {
@@ -127,6 +142,9 @@ header a {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 6px;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .menu-text {
@@ -136,27 +154,51 @@ header a {
 }
 
 .menu-text h3 {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 17px;
     margin-block: 0;
     
 }
 
 .menu-text p {
     font-weight: 300;
-    font-size: 15.0431px;
+    font-size: 14px;
     margin-block: 0;
-    
+    line-height: 22px;
 }
 
 .menu-price p {
     font-weight: 700;
-    font-size: 15.0431px;
-    margin-right: 13.5px;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-right: 16px;
 }
 
 .menu-confirmation {
     display: contents;
+}
+
+/* COMMANDER BUTTON */
+
+.commander {
+    display: flex;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18.75px;
+    padding-right: 18.75px;
+    border-radius: 30px;
+    background: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 22px;   
+    margin-bottom: 40px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 186px;
 }
 
 
@@ -181,9 +223,29 @@ footer h3 {
 
 footer div {
     margin-left: 25px;
+    font-weight: 500;
 }
 
 footer .fa-solid {
     width: 13px;
     margin-right: 15px;
+}
+
+
+
+/* ANIMATION */
+
+.fa-heart {
+    color: black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.fa-heart:hover {
+    background: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    transform: scale(1.2);
 }
