@@ -416,6 +416,36 @@ footer .fa-solid {
 }
 
 .commander:hover {
-    scale: 1.02;
     filter: brightness(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+}
+
+/* animation menu / STEPS */
+
+.STEPS:nth-child(2) {
+    animation: steps-timer 2s forwards;
+}
+
+.STEPS:nth-child(3) {
+    animation: steps-timer 2s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.STEPS:nth-child(4) {
+    animation: steps-timer 2s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+@keyframes steps-timer {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

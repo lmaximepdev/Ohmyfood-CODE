@@ -450,6 +450,7 @@ footer .fa-solid {
 .color-btn:hover {
     scale: 1.02;
     filter: brightness(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
 }
 
 /* animation loader */
@@ -512,7 +513,3 @@ footer .fa-solid {
         transform: rotate(360deg);
     }
 }
-
-
-
-
