@@ -257,9 +257,10 @@ footer h3 {
     font-weight: 400;
     text-decoration: none;
     color: white;
-    &:hover {
-        text-decoration: underline;
-    }
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
 }
 
 footer .fa-solid {
@@ -343,9 +344,6 @@ footer .fa-solid {
         font-weight: 400;
         text-decoration: none;
         color: white;
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
 }
@@ -388,7 +386,6 @@ footer .fa-solid {
 
 .menu-card:hover .menu-confirmation {
     display: flex;
-    color:#99E2D0;
     align-items: center;
     justify-content: center;
     background-color: #99E2D0;

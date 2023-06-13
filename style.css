@@ -79,7 +79,7 @@ header img {
     line-height: 21px;
 }
 
-.explorer-restaurants a {
+.explorer-restaurants .color-btn {
     display: flex;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -286,9 +286,10 @@ footer h3 {
     font-weight: 400;
     text-decoration: none;
     color: white;
-    &:hover {
-        text-decoration: underline;
-    }
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
 }
 
 footer .fa-solid {
